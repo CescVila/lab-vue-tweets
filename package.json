@@ -8,7 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "global": "^4.4.0",
+    "vue": "^3.2.25",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
