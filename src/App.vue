@@ -1,6 +1,6 @@
 <template>
-  <div class="app">
-    <Tweet tweet="tweets" />
+  <div class="app" v-for="(tweet, index) in tweets" :key="index">
+    <Tweet :tweet="tweet" />
   </div>
 </template>
 
@@ -9,6 +9,7 @@
 import Tweet from './components/Tweet.vue';
 
 export default {
+  props: ["name", "image", "handle", "timestamp", "message"],
     data: () => ({
         tweets: [
             {
